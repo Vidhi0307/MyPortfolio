@@ -33,7 +33,7 @@ const Header = () => {
         <NavLink 
           exact="true"
           activeclassname="active"
-          href="/home"
+          href="/"
          >
           <FontAwesomeIcon className='fa-2x' icon={faHome } color="#4d4d4e" />
         </NavLink>
