@@ -22,5 +22,20 @@
 
   }
 
+  .email {
+    justify-content: space-around;
+      gap: 2rem;
+    display: flex;
+    flex-direction: column;
+     margin:9px;
+    font-weight:bolder;
+     font-size: larger;
+    color:black;
+     max-width:70vh;
+     font-size: larger;
+    
+
+  }
+
 
 
