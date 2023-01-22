@@ -1,9 +1,15 @@
+
 import React from 'react'
+import Project from '../components/Project'
+
+
 
 const Portfolio = () => {
   return (
     <div>
-      <h1>Hello World</h1>
+      <h1 className=" ">
+     <Project/>
+    </h1>
     </div>
   )
 }

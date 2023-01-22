@@ -1,14 +1,12 @@
-import './index.scss'
 import { useState } from 'react'
 import DP from '../../assets/images/vid.jpg'
+import './index.scss'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLinkedin,
   faGithub,
-  faYoutube,
-  faSkype,
-} from '@fortawesome/free-brands-svg-icons'
+ } from '@fortawesome/free-brands-svg-icons'
 import {
   faHome,
   faUser,
@@ -19,56 +17,51 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
 
-const Sidebar = () => {
-  const [showNav, setShowNav] = useState(false);
+const Header = () => {
+ 
 
   return (
     <div className="nav-bar">
       <Link 
         className="logo"
-        to="/"
-        onClick={() => setShowNav(false)}>
+        to="/">
+       
         <img src={DP} alt="Logo" />
        
       </Link>
-      <nav className={showNav ? 'mobile-show' : ''}>
+      <nav className="">
         <NavLink 
           exact="true"
           activeclassname="active"
-          to="/"
-          onClick={() => setShowNav(false)}>
-          <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+          href="/home"
+         >
+          <FontAwesomeIcon className='fa-2x' icon={faHome } color="#4d4d4e" />
         </NavLink>
         <NavLink 
+         exact="true"
           activeclassname="active"
           className="about-link"
           to="/about"
-          onClick={() => setShowNav(false)}>
-          <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+          >
+          <FontAwesomeIcon  className='fa-2x' icon={faUser} color="#4d4d4e" />
         </NavLink>
         <NavLink
+         exact="true"
           activeclassname="active"
           className="portfolio-link"
           to="/portfolio"
-          onClick={() => setShowNav(false)}
-        >
-          <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
+                 >
+          <FontAwesomeIcon className='fa-2x' icon={faSuitcase} color="#4d4d4e" />
         </NavLink>
         <NavLink
+         exact="true"
           activeclassname="active"
           className="contact-link"
-          to="/contact"
-          onClick={() => setShowNav(false)}
+          to="/contact"         
         >
-          <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+          <FontAwesomeIcon className='fa-2x' icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
-        <FontAwesomeIcon 
-          onClick={() => setShowNav(false)}
-          icon={faClose}
-          color="#ffd700"
-          size="3x"
-          className='close-icon' />
-      </nav>
+         </nav>
       <ul>
         <li>
           <a
@@ -79,7 +72,7 @@ const Sidebar = () => {
             <FontAwesomeIcon
               icon={faLinkedin}
               color="#4d4d4e"
-              className="anchor-icon"
+              className="anchor-icon  fa-2x"
             />
           </a>
         </li>
@@ -91,28 +84,16 @@ const Sidebar = () => {
           >
             <FontAwesomeIcon
               icon={faGithub}
+             
               color="#4d4d4e"
-              className="anchor-icon"
+              className="anchor-icon fa-2x"
             />
           </a>
         </li>
-        <li>
-          <a
-            href="https://www.youtube.com/channel/UCBu5ulO4d-d47lAVybpRTkw"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon
-              icon={faYoutube}
-              color="#4d4d4e"
-              className="anchor-icon"
-            />
-          </a>
-        </li>
+        
        
       </ul>
       <FontAwesomeIcon 
-          onClick={() => setShowNav(true)}
           icon={faBars}
           color="#ffd700"
           size="3x"
@@ -121,4 +102,4 @@ const Sidebar = () => {
   )
 }
 
-export default Sidebar
+export default Header

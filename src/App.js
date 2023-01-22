@@ -1,27 +1,28 @@
 
-import { Container } from "react-bootstrap";
-import './App.scss'
-import {  Routes, Route } from "react-router-dom";
 
-import Footer from './components/Footer'
-import Layout from "./components/Layout";
-import Contact from "./components/Contact";
+import {  Routes, Route, BrowserRouter } from "react-router-dom";
 
-import Navigation from './components/Navigation';
+import Contact from "./pages/Contact";
 import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume'
+import  Home from "./pages/Home";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
-        
-  
-          <Routes>
-          <Route path="/" element={<Layout />}>
-          <Route path="/contact" element={<Contact />} />
-         </Route>
-          </Routes>
-          <Footer/>
+        <BrowserRouter>
+    <Header/>
          
+         <div className="home">
+          <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/portfolio" element={<Portfolio />} />          
+          <Route path="/resume" element={<Resume />} />
+           </Routes>
+          </div>
+          </BrowserRouter> 
     </div>
   );
 }
