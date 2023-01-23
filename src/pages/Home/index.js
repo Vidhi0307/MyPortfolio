@@ -14,7 +14,7 @@ const Home
       web developer</h1>
       <h2>Frontend Developer/Javascript Expert</h2>
       </div>
-      <Button to='/contact' className='m-2 rounded '>Contact me</Button>
+      <Button href='/resume' className='m-2 rounded '>Resume</Button>
     </Container>
   )
 }
