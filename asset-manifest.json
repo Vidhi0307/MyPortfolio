@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1ba47b30.css",
+    "main.js": "/static/js/main.b165cae5.js",
+    "static/media/vid.jpg": "/static/media/vid.14633a8382d2a104916f.jpg",
+    "static/media/DailyPlanner.jpg": "/static/media/DailyPlanner.5b3f62cdcc4cafa34102.jpg",
+    "static/media/GoogleAPI.jpg": "/static/media/GoogleAPI.d9d16189cd93eed21733.jpg",
+    "static/media/PrettyStones.jpg": "/static/media/PrettyStones.d6c8b841cfac526276b0.jpg",
+    "static/media/TeamProfileGenerator.jpg": "/static/media/TeamProfileGenerator.edc220093c71acc32996.jpg",
+    "static/media/CodeQuiz.jpg": "/static/media/CodeQuiz.df650b3cf6020bb8752c.jpg",
+    "static/media/TechBlog.jpg": "/static/media/TechBlog.dadd277f68e509fa3f99.jpg",
+    "static/media/WeatherCheckApp.jpg": "/static/media/WeatherCheckApp.e4ab9f934cd7d2f2dee5.jpg",
+    "static/media/VidhiSharmaResume.pdf": "/static/media/VidhiSharmaResume.29f28e6c33002ec7088e.pdf",
+    "static/media/helvetica-neu.ttf": "/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/PasswordGenerator.jpg": "/static/media/PasswordGenerator.aa25cbf89939def02f6b.jpg",
+    "index.html": "/index.html",
+    "main.1ba47b30.css.map": "/static/css/main.1ba47b30.css.map",
+    "main.b165cae5.js.map": "/static/js/main.b165cae5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ba47b30.css",
+    "static/js/main.b165cae5.js"
+  ]
+}
